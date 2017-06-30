@@ -1,0 +1,126 @@
+.section .pictureFrame{
+	width: 938px;
+	height:528px;
+	margin: 0 auto;
+	border: 1px solid gray;
+}
+.section .pictureFrame .picture1,.picture2,.picture3,.picture4,.picture5,.picture6{
+	width: 300px;
+	height: 250px;
+	margin-top:10px;
+	margin-left:10px;
+	border:1px solid gray;
+	float: left;
+	position: relative;
+}
+.section .pictureFrame .picture11{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture1:hover .picture11{
+	display: block;
+}
+
+
+.section .pictureFrame .picture12{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture2:hover .picture12{
+	display: block;
+}
+
+
+.section .pictureFrame .picture13{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture3:hover .picture13{
+	display: block;
+}
+
+
+.section .pictureFrame .picture14{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture4:hover .picture14{
+	display: block;
+}
+
+
+.section .pictureFrame .picture15{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture5:hover .picture15{
+	display: block;
+}
+
+
+.section .pictureFrame .picture16{
+	width: 300px;
+	height: 250px;
+	border:1px solid gray;
+	left: 0px;
+	top: 0px;
+	background:rgba(230,0,18,0.5);
+	position:absolute;
+	display: none;
+}
+
+.picture6:hover .picture16{
+	display: block;
+}
+.section .pictureFrame img{
+	width: 300px;
+	height: 250px;
+}
+.section .pictureFrame h3{
+	height: 50px;
+	font-size:25px;
+	color: lightblue;
+	text-align: center;
+	line-height: 200px;
+}
+.section .pictureFrame p{
+	font-size:20px;
+	color: lightblue;
+	text-align: center;
+	line-height: 250px;
+}

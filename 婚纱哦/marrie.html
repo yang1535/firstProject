@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 基本演示_dowebok</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/hexagons.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/secion2.css">
+<link rel="stylesheet" type="text/css" href="css/magnifier.css">
+<link rel="stylesheet" type="text/css" href="css/carousel.css">
+<link rel="stylesheet" type="text/css" href="css/imageflow.css">
+<script src="js/jquery.js"></script>
+<script src="js/imageflow.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+
+    $(function(){
+
+      $('#dowebok').fullpage({
+
+	   sectionsColor: ['rgba(255,255,255)', 'rgba(69,137,148，0.7)', 'rgba(178,200,187,1)', 'rgba(117,121,71,1)','rgba(117,121,71,1)','rgba(49,49,49,0.9)'],
+		/*'navigation': true,小圆圈*/
+
+		anchors:['page1','page2','page3','page4','page5','page6'],
+
+		menu:'#menu'});
+
+		setInterval(function(){
+
+        $.fn.fullpage.moveSlideRight();
+
+         }, 3000);
+	});	
+</script>
+<!--轮播-->
+</head>
+
+<body>
+<header>
+<ul id="menu">
+ 	<img src="images/menu.png">
+	<li data-menuanchor="page1" class="active"> <a href="#page1">首页</a></li>
+	<li data-menuanchor="page2" class="active"><a href="#page2">经典系列</a></li>
+	<li data-menuanchor="page3" class="active"><a href="#page3">独家系列</a></li>
+	<li data-menuanchor="page4" class="active"><a href="#page4">主题系列</a></li>
+	<li data-menuanchor="page5" class="active"><a href="#page5">最新系列</a></li>
+	<li data-menuanchor="page6" class="active"><a href="#page6">联系我们</a></li>
+</ul>
+<div id="dowebok">
+	<div class="section">
+		<div class="slide"><img src="images/1.jpg" style="width: 100%;height:100%;"></div>
+		<div class="slide"><img src="images/2.jpg" style="width: 100%;height:100%;"></div>
+		<div class="slide"><img src="images/3.jpg" style="width: 100%;height:100%;"></div>
+		<div class="slide"><img src="images/4.jpg" style="width: 100%;height:100%;"></div>
+		<div class="slide"><img src="images/5.jpg" style="width: 100%;height:100%;"></div>
+		<div class="slide"><img src="images/6.jpg" style="width: 100%;height:100%;"></div>
+	</div>
+
+	<div class="section" style="background: url(images/111.jpg)no-repeat;opacity: 0.9;">
+
+    <div class="pictureFrame">
+    <div class="picture1">
+    <img src="images/01.jpg">
+    <div class="picture11">
+    <h3>一米阳光</h3>
+    <p>给你一米阳光！</p>
+    </div>
+    </div>
+    
+    <div class="picture2">
+    <img src="images/02.jpg">
+    <div class="picture12">
+    <h3>白马王子</h3>
+    <p>带你领略王室风情！</p>
+    </div>
+    </div>
+    
+    <div class="picture3">
+    <img src="images/03.jpg">
+    <div class="picture13">
+    <h3>翡翠之恋</h3>
+    <p>绿色的自然之美！</p>
+    </div>
+    </div>
+    
+    <div class="picture4">
+    <img src="images/04.jpg">
+    <div class="picture14">
+    <h3>你好，女王陛下</h3>
+    <p>我的女王大人！</p>
+    </div>
+    </div>
+    
+    <div class="picture5">
+    <img src="images/05.jpg">
+    <div class="picture15">
+    <h3>白色恋人</h3>
+    <p>做我的天使吧！</p>
+    </div>
+    </div>
+    
+    <div class="picture6">
+    <img src="images/07.jpg">
+    <div class="picture16">
+    <h3>枫火恋情</h3>
+    <p>停车坐爱枫林晚</p>
+    </div>
+    </div>
+    
+    </div>
+	
+	</div>
+      
+     <div class="section" style="background: url(images/222.jpg)no-repeat;opacity: 0.9;">
+
+		<div class="magnifier" id="magnifier1">
+		<div class="magnifier-container">
+			<div class="images-cover">
+				<img src="images/001.jpg" />
+			</div>
+			<div class="move-view"></div>
+		</div>
+		<div class="magnifier-assembly">
+			<div class="magnifier-btn">
+				<span>&lt;</span>
+				<span>&gt;</span>
+			</div>
+			<div class="magnifier-line">
+				<ul class="clearfix animation03">
+					<li>
+						<div class="small-img">
+							<img src="images/001.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="images/002.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="images/003.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="images/004.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="images/005.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="images/006.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="magnifier-view"></div>
+	</div>
+	</div>
+
+
+
+	<div class="section" style="background: url(images/13.jpg)no-repeat;opacity: 0.9;">
+		<div style="text-align:center;clear:both;"> </div>
+		<ul id="hexGrid">
+		  <li class="hex"> <a class="hexIn" href="#"> <img src="images/121.jpg" alt="" />
+		    <h1>叙事情节风</h1>
+		    <p>对传统婚纱摄影模式的延伸和拓展</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/132.jpg" alt="" />
+		    <h1>另类个性风</h1>
+		    <p>画面中的每一个元素都充满了非主流的个性气息</p>
+		    </a> </li>
+
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/130.jpg" alt="" />
+		    <h1>简约时尚风</h1>
+		    <p>简单精致的时尚装扮,比较能突显容貌和气质</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/129.jpg" alt="" />
+		    <h1>艺术油画风</h1>
+		    <p>它是您情感的独特表达，是永恒爱情的典藏</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/128.jpg" alt="" />
+		    <h1>夫妻反串风</h1>
+		    <p>象征男女自由平等,夫妻之间不分你我的坚实感情</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/127.jpg" alt="" />
+		    <h1>古典宫廷风</h1>
+		    <p>端庄正式的照片风格尤其受到长辈的青睐</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/126.jpg" alt="" />
+		    <h1>韩式唯美风</h1>
+		    <p>生活化的场景、温馨的氛围、幸福感的流露</p>
+		    </a> </li>
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/125.jpg" alt="" />
+		    <h1>清新自然风</h1>
+		    <p>嬉笑、打闹、回忆的场景，是二人的恋爱记录</p>
+		    </a> </li>
+
+
+		     <li class="hex"> <a class="hexIn" href="#"> <img src="images/123.jpg" alt="" />
+		    <h1>时尚影像风</h1>
+		    <p>生活中的点滴串联在一起，都是两人爱情的见证。</p>
+		    </a> </li>
+
+        </ul>
+	</div>
+
+	    <div class="section"  style="background: url(images/555.jpg)no-repeat;opacity: 0.9;">
+	    <div id="LoopDiv">
+        <input id="S_Num" type="hidden" value="8" />
+        <div id="starsIF" class="imageflow"> 
+		<img src="images/666.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/667.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/661.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/662.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/663.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/664.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/665.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/666.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/668.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/669.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/670.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/671.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+        </div>
+		</div>
+		  <!--效果html结束-->
+		<div class="clear"></div>
+	</div>
+
+	<div class="section" style="background: url(images/12.jpg)no-repeat;opacity: 0.9;background-size:100% 90%;">
+
+		<div class="dress">
+			<ul>
+				<li>QQ：2018588936</li>
+				<li>微信：2018588936</li>
+				<li>电话：15565296321</li>
+				<li>地址：郑州市高新区科技大道</li>
+			</ul>
+		</div>
+      <div class="open">
+      <h3>不平凡婚纱欢迎您！</h3>
+      <p>您的选择我们的荣幸！竭诚为您服务！</p>
+      </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+<script>
+
+$(function(){
+
+	$(".section ul li .rsp").hide();
+
+	$(".section	 ul li").hover(function(){
+
+		$(this).find(".rsp").stop().fadeTo(500,0.5)
+
+		$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+
+	},function(){
+
+		$(this).find(".rsp").stop().fadeTo(500,0)
+
+		$(this).find(".text").stop().animate({left:'318'}, {duration: "fast"})
+
+		$(this).find(".text").animate({left:'-318'}, {duration: 0})
+
+	});
+
+});
+
+</script>
+<script type="text/javascript" src="js/magnifier.js"></script>
+<script type="text/javascript">
+		$(function() {
+
+			magnifier({
+
+				width : 500,//主容器宽
+
+				height : 500,//主容器高
+
+				magnifier : "#magnifier1",//主容器
+			});
+		});
+</script>
+<!--放大镜-->
+
+
+</body>
+</html>
